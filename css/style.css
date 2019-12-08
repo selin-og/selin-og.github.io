@@ -1,0 +1,144 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #9BC1BC;
+  position: relative;
+}
+
+p {
+  font-family: 'Ubuntu Mono',
+    monospace;
+  font-size: 35px;
+}
+
+.details {
+  color: white;
+}
+
+.profile-link {
+  color: #ED6A5A;
+  font-size: 20px;
+  display: block;
+}
+
+h1 {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 60px;
+}
+p {
+  color: black;
+  font-weight: bold;
+}
+.link-heading {
+  display: block;
+  font-size: 12px;
+}
+
+a:hover,
+a:visited:hover {
+  color: #E6EBE0;
+}
+
+a:visited {
+  color: #F4F1BB;
+}
+
+.square-one .inner {
+  background: #D62828;
+}
+
+.square-two .inner {
+  background: #003049;
+}
+
+.square-three .inner {
+  background: #FCBF49;
+}
+
+.outer {
+  box-sizing: border-box;
+  padding: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: flex-start;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  align-items: stretch;
+}
+
+
+.left {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.right {
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrap {
+  position: relative;
+  width: 340px;
+  height: 345px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.square {
+  position: absolute;
+  display: flex;
+  height: 240px;
+  width: 240px;
+  transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+}
+
+.inner {
+  height: 240px;
+  width: 4px;
+  margin-right: 8px;
+}
+
+
+.square-one {
+  left: 48px;
+  top: 52px;
+}
+
+.wrap:hover .square-one {
+  left: 0;
+  top: 0;
+}
+
+.square-two {
+  left: 52px;
+  top: 52px;
+}
+
+.square-three {
+  left: 56px;
+  top: 52px;
+}
+
+.wrap:hover .square-three {
+  left: 104px;
+  top: 104px;
+}
